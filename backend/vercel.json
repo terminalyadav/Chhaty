@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/index.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "development",
+    "MONGODB_URI": "mongodb+srv://Admin:code@ashutosyadav.rpf4sl6.mongodb.net/",
+    "JWT_SECRET": "12345",
+    "CLOUDINARY_CLOUD_NAME": "dw5eipx4n",
+    "CLOUDINARY_API_KEY": "789378915385299",
+    "CLOUDINARY_API_SECRET": "uD5reqf-H88Z0t9T0l6tvQzhyRk"
+  }
+}
